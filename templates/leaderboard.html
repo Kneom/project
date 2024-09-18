@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<main>
+    <h1 class="messages">Leaderboard</h1>
+    <section>
+        {% for round in rounds %}
+        <details>
+            <summary class="messages"> Round {{ round["round"] }}</summary>
+                {% for player in leaderboard %}
+                {% if player["round"] == round["round"] %}
+                <div class="messages">
+                    <h2>Player : {{ player["player"] }}</h2>
+                    <p>Time : {{ player["time"] }} seconds</p>
+                </div>
+                {% endif %}
+                {% endfor %}
+        </details>
+        {% endfor %}
+    </section>
+</main>
+
+
+{% endblock %}

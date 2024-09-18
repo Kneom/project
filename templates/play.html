@@ -1,0 +1,17 @@
+{%extends "base.html"%}
+{% block main_content %}
+<section class="centered-section">
+    <h3 id="sheepShearedCounter">Sheep Sheared: 0</h3>
+    <img src="{{ url_for('static', filename='sack.png')}}" width="200" height="200">
+    <h3 id="sack">Sack O' Whool</h3>
+    <h3 id="timer">Timer:</h3>
+</section>
+<section class="centered-section">
+    <h2 id="round">Round 1</h2>
+    <canvas class="container" width="1280" height="1024"></canvas>
+    <p id="smallTimer">Round Starts in: 5</p>
+    <button id="restartButton" onclick="location.reload()">Restart Game</button>
+    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5">
+</section>
+
+{% endblock %}

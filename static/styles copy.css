@@ -1,0 +1,18 @@
+canvas{
+    background-color: black;
+    align-items: center;
+    border: 2px solid green;
+    width: 960px;
+    height: 768px;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+
+
+#volumeSlider{
+
+    text-align: center;
+
+}
