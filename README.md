@@ -1,4 +1,4 @@
-# Shear Dem sheap
+# Shear Dem Sheep
 
 2D top-down game
 
